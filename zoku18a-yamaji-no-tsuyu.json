@@ -26,7 +26,10 @@
  "license": {
   "text": "CC0 1.0"
  },
- "translation": null,
+ "translation": {
+  "count": 15,
+  "note": "AI による現代語訳"
+ },
  "blocks": [
   {
    "id": "zoku18a-yamaji-no-tsuyu-0001",
@@ -333,6 +336,7 @@
   "poems": 0,
   "editions": 1,
   "updated": "2026-11-01",
-  "updated_at": "2026-11-01T09:10:48+09:00"
+  "updated_at": "2026-11-01T09:10:48+09:00",
+  "yaku": 15
  }
 }

@@ -2,7 +2,7 @@
 
 雲居の文庫（くもゐのふみぐら）の一作品です。著作権の保護期間が満了した刊本から起こした本文を、誰でも読み・使い・直せるように置いています。
 
-**サイトで読む：[山路の露（雲居の文庫（くもゐのふみぐら））](https://informanellica.com/kumoi-no-fumigura/read.html?work=zoku18a-yamaji-no-tsuyu)**（原本の画像の表示、修正案の送信ができます）
+**サイトで読む：[山路の露（雲居の文庫（くもゐのふみぐら））](https://informanellica.com/kumoi-no-fumigura/read.html?work=zoku18a-yamaji-no-tsuyu)**（訳との対訳、原本の画像の表示、修正案の送信ができます）
 
 | | |
 |---|---|
@@ -25,11 +25,14 @@
 | パス | 中身 |
 |---|---|
 | `honbun/` | 本文。1 行が 1 段落で、`段落ID<TAB>本文` の形です。原本の行の切れ目は ⏎ で示しています（⏎ は改行の印で、本文の字ではありません）。50段落ごとにファイルを分けています（1ファイル）。 |
+| `yaku/` | 現代語訳。1 行が 1 段落（歌集は 1 首）で、`段落ID<TAB>訳<TAB>出典` の形です。出典の欄が空の訳は、このプロジェクトで作ったものです（AI を使っています）。本文と同じファイル分けです。 |
 | `zoku18a-yamaji-no-tsuyu.json` | 本文・底本・作品の説明・作中歌のデータをまとめた JSON（訳は入れず、`yaku/` だけに置いています）。段落ごとに原本のコマ番号があります。 |
 
 段落ID（例: `zoku18a-yamaji-no-tsuyu-0001`）は、本文を直しても変わりません。原本の画像は、底本のリンクからコマ番号で見られます。
 
 ## 誤りを見つけたら
+
+訳の誤りや、もっとよい訳は、[「訳の誤り」の Issue](https://github.com/kumoi-no-fumigura/zoku18a-yamaji-no-tsuyu/issues/new?template=yaku.yml) か、`yaku/` の該当行を直した Pull Request で知らせてください。
 
 
 - **Issue で知らせる**：[「本文の誤り」の Issue を作る](https://github.com/kumoi-no-fumigura/zoku18a-yamaji-no-tsuyu/issues/new?template=teisei.yml)。段落ID・いまの本文・直した本文・根拠を書いてください。

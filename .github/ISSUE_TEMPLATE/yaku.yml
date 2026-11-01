@@ -1,0 +1,28 @@
+name: 訳の誤り
+description: 現代語訳の誤りや、よりよい訳を知らせる
+title: "[訳] 山路の露 "
+labels: ["訳"]
+body:
+  - type: input
+    id: block
+    attributes:
+      label: 段落ID
+      description: "yaku/ の行頭にある ID（例: zoku18a-yamaji-no-tsuyu-0001）"
+    validations:
+      required: true
+  - type: textarea
+    id: before
+    attributes:
+      label: いまの訳
+    validations:
+      required: true
+  - type: textarea
+    id: after
+    attributes:
+      label: 直した訳
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 理由・根拠
